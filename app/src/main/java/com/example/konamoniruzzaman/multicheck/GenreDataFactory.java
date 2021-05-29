@@ -16,7 +16,8 @@ public class GenreDataFactory {
   }
 
   public static List<MultiCheckGenre> makeMultiCheckGenres() {
-    return Arrays.asList(makeMultiCheckRockGenre(),
+    return Arrays.asList(
+        makeMultiCheckRockGenre(),
         makeMultiCheckJazzGenre(),
         makeMultiCheckClassicGenre(),
         makeMultiCheckSalsaGenre(),
@@ -30,7 +31,7 @@ public class GenreDataFactory {
   }
 
   public static MultiCheckGenre makeMultiCheckRockGenre() {
-    return new MultiCheckGenre("Rock", makeRockArtists(), R.drawable.ic_electric_guitar);
+    return new MultiCheckGenre("Rock", makeRockArtists(), R.drawable.ic_arrow_down);
   }
 
 
@@ -49,7 +50,7 @@ public class GenreDataFactory {
   }
 
   public static MultiCheckGenre makeMultiCheckJazzGenre() {
-    return new MultiCheckGenre("Jazz", makeJazzArtists(), R.drawable.ic_saxaphone);
+    return new MultiCheckGenre("Jazz", makeJazzArtists(), R.drawable.ic_arrow_down);
   }
 
 
@@ -66,7 +67,7 @@ public class GenreDataFactory {
   }
 
   public static MultiCheckGenre makeMultiCheckClassicGenre() {
-    return new MultiCheckGenre("Classic", makeClassicArtists(), R.drawable.ic_violin);
+    return new MultiCheckGenre("Classic", makeClassicArtists(), R.drawable.ic_arrow_down);
   }
 
 
@@ -84,7 +85,7 @@ public class GenreDataFactory {
   }
 
   public static MultiCheckGenre makeMultiCheckSalsaGenre() {
-    return new MultiCheckGenre("Salsa", makeSalsaArtists(), R.drawable.ic_maracas);
+    return new MultiCheckGenre("Salsa", makeSalsaArtists(), R.drawable.ic_arrow_down);
   }
 
 
@@ -102,7 +103,7 @@ public class GenreDataFactory {
   }
 
   public static MultiCheckGenre makeMulitCheckBluegrassGenre() {
-    return new MultiCheckGenre("Bluegrass", makeBluegrassArtists(), R.drawable.ic_banjo);
+    return new MultiCheckGenre("Bluegrass", makeBluegrassArtists(), R.drawable.ic_arrow_down);
   }
 
   public static List<Artist> makeBluegrassArtists() {

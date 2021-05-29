@@ -7,10 +7,12 @@ import android.widget.Button;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.konamoniruzzaman.R;
+import com.example.konamoniruzzaman.view_model.CategoryViewModel;
 
 import static com.example.konamoniruzzaman.multicheck.GenreDataFactory.makeMultiCheckGenres;
 
@@ -18,7 +20,7 @@ import static com.example.konamoniruzzaman.multicheck.GenreDataFactory.makeMulti
 public class MultiCheckActivity extends AppCompatActivity {
 
   private MultiCheckGenreAdapter adapter;
-
+  private CategoryViewModel categoryViewModel;
   @Override
   protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -28,7 +30,7 @@ public class MultiCheckActivity extends AppCompatActivity {
 
     RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
     LinearLayoutManager layoutManager = new LinearLayoutManager(this);
-
+    //categoryViewModel = new ViewModelProvider(this).get(CategoryViewModel.class);
     adapter = new MultiCheckGenreAdapter(makeMultiCheckGenres());
     recyclerView.setLayoutManager(layoutManager);
     recyclerView.setAdapter(adapter);

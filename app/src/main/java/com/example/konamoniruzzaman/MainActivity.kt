@@ -13,18 +13,9 @@ class MainActivity : AppCompatActivity() {
         buttonAction()
     }
     private fun buttonAction() {
-        btnRegCustomer.setOnClickListener {
-            val intent = Intent(this@MainActivity, RegistrationActivity::class.java)
-            startActivity(intent);
-        }
-
-        btnViewCustomer.setOnClickListener {
-            val intent = Intent(this@MainActivity, ViewCustomer::class.java)
-            startActivity(intent);
-        }
 
         btnListCheck.setOnClickListener {
-            val intent = Intent(this@MainActivity, MultiCheckActivity::class.java)
+            val intent = Intent(this@MainActivity, CategoryActivity::class.java)
             startActivity(intent);
         }
     }
