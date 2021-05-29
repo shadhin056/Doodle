@@ -50,7 +50,7 @@ public class GenreViewHolder extends GroupViewHolder {
 
   private void animateExpand() {
     RotateAnimation rotate =
-        new RotateAnimation(360, 270, RELATIVE_TO_SELF, 0.5f, RELATIVE_TO_SELF, 0.5f);
+        new RotateAnimation(360, 90, RELATIVE_TO_SELF, 0.5f, RELATIVE_TO_SELF, 0.5f);
     rotate.setDuration(300);
     rotate.setFillAfter(true);
     arrow.setAnimation(rotate);
@@ -58,7 +58,7 @@ public class GenreViewHolder extends GroupViewHolder {
 
   private void animateCollapse() {
     RotateAnimation rotate =
-        new RotateAnimation(270, 360, RELATIVE_TO_SELF, 0.5f, RELATIVE_TO_SELF, 0.5f);
+        new RotateAnimation(90, 360, RELATIVE_TO_SELF, 0.5f, RELATIVE_TO_SELF, 0.5f);
     rotate.setDuration(300);
     rotate.setFillAfter(true);
     arrow.setAnimation(rotate);
